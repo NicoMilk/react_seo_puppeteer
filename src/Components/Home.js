@@ -50,9 +50,9 @@ const Home = () => {
 
       <ul>
         {data.map(post =>
-        // <Link to={{pathname:`/post/${post.id}`, state: { title: `${post.title}`, body: `${post.body}`}}}>
+        <Link to={{pathname:`/post/${post.id}`, state: { title: `${post.title}`, body: `${post.body}`}}}>
           <li style={{listStyle:'none'}} key="{post.title}">{post.id} - {post.title}</li>      
-        // </Link>
+        </Link>
         )}
       </ul>
 
